@@ -338,6 +338,12 @@
   "setting_reddit_animal_desc": {
     "message": "Animal photos from reddit, updated daily"
   },
+  "setting_reddit_city": {
+    "message": "reddit - city"
+  },
+  "setting_reddit_city_desc": {
+    "message": "City photos from reddit, updated daily"
+  },
   "setting_mine": {
     "message": "Extension developer"
   },

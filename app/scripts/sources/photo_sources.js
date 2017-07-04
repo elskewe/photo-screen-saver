@@ -32,6 +32,7 @@ app.PhotoSources = (function() {
     SPACE_RED: 'useSpaceReddit',
     EARTH_RED: 'useEarthReddit',
     ANIMAL_RED: 'useAnimalReddit',
+    CITY_RED: 'useCityReddit',
     INT_FLICKR: 'useInterestingFlickr',
     AUTHOR: 'useAuthors',
   };

@@ -97,6 +97,9 @@
         case app.PhotoSources.UseKey.ANIMAL_RED:
           return new app.RedditSource(useKey, 'animalRedditImages', 'reddit',
               true, false, 'r/animalporn/');
+        case app.PhotoSources.UseKey.CITY_RED:
+          return new app.RedditSource(useKey, 'cityRedditImages', 'reddit',
+              true, false, 'r/cityporn/');
         default:
           Chrome.GA.error(`Bad PhotoSource type: ${useKey}`,
               'SSView.createView');

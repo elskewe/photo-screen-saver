@@ -64,6 +64,7 @@ app.Data = (function() {
    * @property {boolean} useSpaceReddit - use this photo source
    * @property {boolean} useEarthReddit - use this photo source
    * @property {boolean} useAnimalReddit - use this photo source
+   * @property {boolean} useCityReddit - use this photo source
    * @property {boolean} useEditors500px - use this photo source
    * @property {boolean} usePopular500px - use this photo source
    * @property {boolean} useYesterday500px - use this photo source
@@ -115,6 +116,7 @@ app.Data = (function() {
     'useSpaceReddit': false,
     'useEarthReddit': false,
     'useAnimalReddit': false,
+    'useCityReddit': false,
     'useEditors500px': false,
     'usePopular500px': false,
     'useYesterday500px': false,
@@ -351,7 +353,7 @@ app.Data = (function() {
         // individual change
         if (app.PhotoSources.isUseKey(key) || (key === 'fullResGoogle')) {
           // photo source change
-          const useKey = (key === 'fullResGoogle') ? 'useGoogleAlbums' : key; 
+          const useKey = (key === 'fullResGoogle') ? 'useGoogleAlbums' : key;
           app.PhotoSources.process(useKey).catch((err) => {
             // send message on processing error
             const msg = app.Msg.PHOTO_SOURCE_FAILED;
